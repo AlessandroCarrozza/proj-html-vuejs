@@ -1,9 +1,11 @@
 <script>
 import MainJumbotron from "./MainJumbotron.vue";
+import MainShop from "./MainShop.vue";
 export default{
     name: "AppMain",
     components: {
         MainJumbotron,
+        MainShop,
     }
 }
 </script>
@@ -12,6 +14,7 @@ export default{
 <template>
   <main>
     <MainJumbotron></MainJumbotron>
+    <MainShop></MainShop>
   </main>
 </template>
 

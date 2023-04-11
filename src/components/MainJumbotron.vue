@@ -10,7 +10,7 @@ export default{
 
 
 <template>
-  <div class="jumbotron">
+  <section class="jumbotron">
     <div class="jumb-top">
         <ul class="container">
             <li>
@@ -45,10 +45,10 @@ export default{
             <div class="img-jumb">
                 <img src="../assets/food-jumb.png" alt="Pet Food">
             </div>
-            <span>Get 50% of discount on our site before visite site <a href="#">visit the shop</a></span>
+            <span>Get 50% of discount on our site before visite site <a href="#">visit the shoppppp</a></span>
         </div>
     </div>
-  </div>
+</section>
 </template>
 
 
