@@ -3,7 +3,7 @@ export default{
     name: "AppHeader",
     data() {
         return{
-            navbarList: [],
+            navbarList: ["Home", "Shop", "About", "Blog", "Contact", "Shop by brand"],
         }
     }
 }
@@ -34,7 +34,11 @@ export default{
             </div>
         </div>
 
-        <div class="header-bottom"></div>
+        <div class="header-bottom">
+            <ul class="navbar">
+                <li v-for="li in navbarList"><a href="#">{{ li }}</a></li>
+            </ul>
+        </div>
     </header>
 </template>
 
@@ -99,6 +103,22 @@ header{
             padding: 0 0.6rem;
             font-size: 1.3rem;
             cursor: pointer;
+        }
+    }
+
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        li{
+            padding: 0 1rem;
+
+            a{
+                color: grey;
+            }
         }
     }
 }
