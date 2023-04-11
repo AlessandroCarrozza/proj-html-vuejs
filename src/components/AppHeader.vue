@@ -45,7 +45,7 @@ export default{
 
 <style scoped lang="scss">
 header{
-    height: 150px;
+    height: 140px;
     .header-top, .header-bottom{
         height: 50%;
     }
