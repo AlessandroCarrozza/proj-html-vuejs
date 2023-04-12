@@ -65,4 +65,21 @@ export const store = reactive({
             price: "25.00",
         },
     ],
+    testimonialsList: [
+        {
+            image: "avatar-1.jpg",
+            testimonial: "Questa è una testimonianza simulata al fine di migliorare, graficamente la sezione apposita per le testimonianze.",
+            userName: "Lisa Smith",
+        },
+        {
+            image: "avatar-2.jpg",
+            testimonial: "Questa è una testimonianza simulata al fine di migliorare, graficamente la sezione apposita per le testimonianze.",
+            userName: "Melissa Green",
+        },
+        {
+            image: "avatar-3.jpg",
+            testimonial: "Questa è una testimonianza simulata al fine di migliorare, graficamente la sezione apposita per le testimonianze.",
+            userName: "Sam Lewis",
+        },
+    ],
 })
