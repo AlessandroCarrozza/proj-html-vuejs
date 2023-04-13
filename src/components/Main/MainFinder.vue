@@ -1,6 +1,6 @@
 <script>
 import CardInfoIcons from "./CardInfoIcons.vue";
-import {store} from "../store";
+import {store} from "../../store";
 export default{
     name: "MainFinder",
     components: {
@@ -49,7 +49,7 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 #finder{
     margin: 4rem 0;
     color: white;
@@ -104,19 +104,19 @@ export default{
         }
 
         .sx{
-            background-image: url("../assets/bg-finder-1.jpg");
+            background-image: url("../../assets/bg-finder-1.jpg");
             background-size: cover;
         }
 
         .dx{
-            background-image: url("../assets/bg-finder-2.jpg");
+            background-image: url("../../assets/bg-finder-2.jpg");
             background-size: cover;
         }
     }
 
     .finder-bottom{
         background-color: $bg-color-primary;
-        background-image: url("../assets/bg-transp.png");
+        background-image: url("../../assets/bg-transp.png");
         padding: 4rem 0;
 
         .info-icons{

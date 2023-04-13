@@ -1,5 +1,5 @@
 <script>
-import BtnSubscribe from "./BtnSubscribe.vue";
+import BtnSubscribe from "../BtnSubscribe.vue";
 export default{
     name: "MainNewsletter",
     components: {
@@ -22,10 +22,10 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 #newsletter{
     .container{
-        background-image: url("../assets/bg-newsletter.jpg");
+        background-image: url("../../assets/bg-newsletter.jpg");
         background-size: cover;
         position: relative;
         bottom: 4rem;

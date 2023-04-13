@@ -1,5 +1,5 @@
 <script>
-import {store} from "../store";
+import {store} from "../../store";
 export default{
     name: "FooterBottom",
     data() {
@@ -27,8 +27,8 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
-@use "../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 #footer-bottom{
 
     .container{

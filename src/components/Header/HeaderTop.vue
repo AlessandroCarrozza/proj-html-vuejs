@@ -9,7 +9,7 @@ export default {
     <section id="header-top">
         <div class="container">
             <div class="logo">
-                <img src="../../public/dark-pet-logo.png" alt="Logo">
+                <img src="../../../public/dark-pet-logo.png" alt="Logo">
             </div>
             <div>
                 <div class="search">
@@ -31,8 +31,8 @@ export default {
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
-@use "../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 #header-top {
     height: 50%;
     border-bottom: 1px solid $input-color;

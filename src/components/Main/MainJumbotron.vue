@@ -1,5 +1,5 @@
 <script>
-import BtnAboutUs from "./BtnAboutUs.vue";
+import BtnAboutUs from "../BtnAboutUs.vue";
 export default{
     name: "MainJumbotron",
     components: {
@@ -56,7 +56,7 @@ export default{
     <div class="jumb-bottom">
         <div class="container">
             <div class="img-jumb">
-                <img src="../assets/food-jumb.png" alt="Pet Food">
+                <img src="../../assets/food-jumb.png" alt="Pet Food">
             </div>
             <span>Get $25 OFF yor first purchase of our homemade pet food! <a href="#">visit the shop</a></span>
         </div>
@@ -66,8 +66,8 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
-@use "../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 #jumbotron{
     position: relative;
 
@@ -113,7 +113,7 @@ export default{
 .jumb-top{
     height: 60px;
     background-color: $bg-color-primary;
-    background-image: url("../assets/bg-transp.png");
+    background-image: url("../../assets/bg-transp.png");
     background-size: contain;
     color: white;
 
@@ -142,7 +142,7 @@ export default{
 
 .jumb-mid{
     height: 600px;
-    background-image: url("../assets/bg-jumb.jpg");
+    background-image: url("../../assets/bg-jumb.jpg");
     background-size: cover;
     color: white;
     position: relative;
@@ -167,13 +167,11 @@ export default{
         h3{
             text-transform: uppercase;
             font-size: 0.9rem;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
 
         h1{
             padding: 2rem 0;
             font-size: 2.5rem;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
         }
     }
@@ -182,7 +180,7 @@ export default{
 .jumb-bottom{
     height: 120px;
     background-color: $bg-color-primary;
-    background-image: url("../assets/bg-transp.png");
+    background-image: url("../../assets/bg-transp.png");
     background-size: contain;
     justify-content: space-around;
     color: white;

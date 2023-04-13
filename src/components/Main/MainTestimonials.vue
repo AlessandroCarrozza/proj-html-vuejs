@@ -1,6 +1,6 @@
 <script>
 import CardTestimonial from "./CardTestimonial.vue";
-import {store} from "../store";
+import {store} from "../../store";
 export default{
     name: "MainTestimonials",
     components: {
@@ -31,11 +31,11 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 #user-testimonials{
     text-align: center;
     background-color: $bg-color-primary;
-    background-image: url("../assets/bg-transp.png");
+    background-image: url("../../assets/bg-transp.png");
     padding: 3rem 0 7rem;
     color: white;
 

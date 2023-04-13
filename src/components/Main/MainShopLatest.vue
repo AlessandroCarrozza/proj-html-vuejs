@@ -1,6 +1,6 @@
 <script>
 import CardProductLatest from "./CardProductLatest.vue";
-import {store} from "../store";
+import {store} from "../../store";
 export default{
     name: "MainShopLatest",
     data(){
@@ -37,7 +37,7 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 #shop-latest{
     text-align: center;
     padding: 2rem 0 5rem;

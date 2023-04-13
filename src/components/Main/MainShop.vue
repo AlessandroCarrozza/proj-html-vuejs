@@ -2,8 +2,8 @@
 import CardCategory from "./CardCategory.vue";
 import CardFood from "./CardFood.vue";
 import CardProduct from "./CardProduct.vue";
-import BtnAboutUs from "./BtnAboutUs.vue";
-import {store} from "../store";
+import BtnAboutUs from "../BtnAboutUs.vue";
+import {store} from "../../store";
 export default{
     name: "MainShop",
     components: {
@@ -74,8 +74,8 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
-@use "../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 #shop{
     padding: 3rem 0;
     text-align: center;
@@ -110,7 +110,7 @@ export default{
 
     .new-arrivals{
         height: 400px;
-        background-image: url("../assets/bg-new-arrivals.jpg");
+        background-image: url("../../assets/bg-new-arrivals.jpg");
         background-size: cover;
         @include flex-center;
         position: relative;
@@ -132,13 +132,11 @@ export default{
             padding: 3rem 0;
             color: white;   
             font-size: 2.5rem;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
 
         h5{
             color: white;
             text-transform: uppercase;
-            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
     }
 

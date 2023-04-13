@@ -46,7 +46,7 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/mixins" as *;
+@use "../../styles/partials/mixins" as *;
 #header-bottom{
     height: 50%;
 

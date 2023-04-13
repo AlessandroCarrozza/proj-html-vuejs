@@ -1,5 +1,5 @@
 <script>
-import {store} from "../store";
+import {store} from "../../store";
 export default{
     name: "CardProductLatest",
     data(){
@@ -32,7 +32,7 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 li{
     width: calc(100% / 3 - 1rem);
     margin: 1rem 0.5rem;

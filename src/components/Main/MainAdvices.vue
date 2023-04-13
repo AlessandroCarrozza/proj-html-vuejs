@@ -1,6 +1,6 @@
 <script>
 import CardArticle from "./CardArticle.vue";
-import {store} from "../store";
+import {store} from "../../store";
 export default{
     name: "MainAdvices",
     components: {
@@ -35,7 +35,7 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 #advices{
     .container{
         text-align: center;

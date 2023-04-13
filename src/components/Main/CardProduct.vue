@@ -22,7 +22,7 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 li{
     margin: 1rem;
     width: calc(100% / 4 - 2rem);

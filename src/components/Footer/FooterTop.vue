@@ -1,5 +1,5 @@
 <script>
-import BtnSubscribe from "./BtnSubscribe.vue";
+import BtnSubscribe from "../BtnSubscribe.vue";
 export default{
     name: "FooterTop",
     components: {
@@ -19,7 +19,7 @@ export default{
   <section id="footer-top">
     <div class="container">
         <div class="logo-info">
-            <img src="../assets/logo-white.png" alt="">
+            <img src="../../assets/logo-white.png" alt="">
             <h5>1234 Avada Avenue Avanaville</h5>
             <h5>Info@yourcompany.com</h5>
             <h5>Call us: (1) 23 456 789</h5>
@@ -43,8 +43,8 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
-@use "../styles/partials/mixins" as *;
+@use "../../styles/partials/variables" as *;
+@use "../../styles/partials/mixins" as *;
 #footer-top{
     padding: 4rem 0;
     color: white;
@@ -90,7 +90,7 @@ export default{
             background-color: $footer-box-color;
             text-align: center;
             padding: 2rem;
-            background-image: url("../assets/bg-transp.png");
+            background-image: url("../../assets/bg-transp.png");
 
             input{
                 display: block;

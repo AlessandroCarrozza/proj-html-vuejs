@@ -22,13 +22,13 @@ export default{
 
 
 <style scoped lang="scss">
-@use "../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 li{
     margin: 0.5rem;
     width: calc(100% / 3 - 1rem);
     background-color: $bg-color-primary;
     padding: 4rem 0;
-    background-image: url("../assets/bg-transp.png");
+    background-image: url("../../assets/bg-transp.png");
 
     h1{
         color: white;
