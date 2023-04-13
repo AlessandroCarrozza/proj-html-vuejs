@@ -13,6 +13,8 @@ export default{
 <template>
   <li>
     <img :src="'./src/assets/' + image" alt="">
+    <p>{{ message }}</p>
+    <h5>{{ userName }}, ThemeFusion</h5>
   </li>
 </template>
 
@@ -24,6 +26,10 @@ li{
     img{
         width: 30%;
         border-radius: 50%;
+    }
+
+    p{
+      padding: 1rem 0;
     }
 }
 </style>

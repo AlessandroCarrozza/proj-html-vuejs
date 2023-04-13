@@ -10,7 +10,7 @@ export default{
 
 
 <template>
-  <section class="jumbotron">
+  <section id="jumbotron">
     <div class="jumb-top">
         <ul class="container">
             <li>
@@ -19,12 +19,12 @@ export default{
             </li>
 
             <li>
-                <i class="fa-regular fa-map"></i>
+                <i class="fa-regular fa-clock"></i>
                 <span><span>International </span>Shipping Services</span>
             </li>
             
             <li>
-                <i class="fa-regular fa-map"></i>
+                <i class="fa-solid fa-check"></i>
                 <span><span>International </span>Shipping Services</span>
             </li>
         </ul>
@@ -65,6 +65,10 @@ export default{
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        li i{
+            padding: 0 0.3rem;
+        }
     }
 }
 

@@ -22,7 +22,7 @@ export default{
 
 
 <template>
-  <section class="shop">
+  <section id="shop">
     <div class="container">
         <div class="browse-category">
             <h1>Browse by category</h1>
@@ -57,7 +57,7 @@ export default{
                 <h1>Items everyone loves</h1>
             </div>
             <div>
-                <div class="btn-all-products">View all products</div>
+                <a href="#" class="btn-all-products">View all products</a>
             </div>
         </div>
         <ul class="best-sellers">
@@ -73,7 +73,7 @@ export default{
 
 
 <style scoped lang="scss">
-.shop{
+#shop{
     padding: 3rem 0;
     text-align: center;
 
@@ -123,6 +123,7 @@ export default{
             background-color: green;
             padding: 0.5rem 1rem;
             border-radius: 30px;
+            color: white;
         }
     }
 }

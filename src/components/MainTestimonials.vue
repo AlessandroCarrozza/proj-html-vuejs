@@ -16,9 +16,9 @@ export default{
 
 
 <template>
-  <section class="user-testimonials">
+  <section id="user-testimonials">
     <div class="container">
-        <h1>User Testimonials</h1>
+        <h1>Users Testimonials</h1>
         <ul class="testimonials">
             <CardTestimonial v-for="testimonial in store.testimonialsList" 
             :image="testimonial.image"
@@ -31,10 +31,15 @@ export default{
 
 
 <style scoped lang="scss">
-.user-testimonials{
+#user-testimonials{
     text-align: center;
     background-color: green;
     background-image: url("../assets/bg-transp.png");
+    padding: 3rem 0 7rem;
+
+    h1{
+        padding: 2rem 0;
+    }
 
     .testimonials{
         width: 100%;

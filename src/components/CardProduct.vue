@@ -15,8 +15,8 @@ export default{
   <li>
     <img :src="'./src/assets/' + image" alt="">
     <h3>{{ name }}</h3>
-    <span>{{ oldPrice }}</span>
-    <span>${{ price }}</span>
+    <h5>{{ oldPrice }}</h5>
+    <h4>${{ price }}</h4>
   </li>
 </template>
 
@@ -28,6 +28,10 @@ li{
 
     img{
         width: 100%;
+    }
+
+    h4, h5{
+      display: inline-block;
     }
 }
 </style>
