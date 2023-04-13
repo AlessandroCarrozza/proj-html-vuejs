@@ -43,13 +43,14 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 #footer-top{
     padding: 4rem 0;
     color: white;
 
     .container{
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
 
         .logo-info{
             color: white;
@@ -61,6 +62,7 @@ export default{
 
             h5{
                 padding: 0.2rem 0;
+                font-weight: 400;
             }
         } 
 
@@ -72,14 +74,20 @@ export default{
             display: block;
             color: white;
             padding: 0.5rem 0;
+            font-weight: 400;
 
             &:hover{
                 text-decoration: underline;
             }
         }
 
+        .shop-by-brand h3, .useful-links h3{
+            font-weight: 400;
+            font-size: 1.5rem;
+        }
+
         .subscribe-newsletter{
-            background-color: greenyellow;
+            background-color: $footer-box-color;
             text-align: center;
             padding: 2rem;
             background-image: url("../assets/bg-transp.png");
@@ -98,7 +106,6 @@ export default{
                 width: 150px;
                 margin: auto;
                 text-align: left;
-                font-weight: 500;
             }
         }
     }

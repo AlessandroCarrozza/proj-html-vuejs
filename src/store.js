@@ -57,7 +57,7 @@ export const store = reactive({
             image: "product-7.jpg",
             name: "Transport cage",
             price: "25.00",
-            oldPrice: "$95.00",
+            oldPrice: "95.00",
         },
         {
             image: "product-8.jpg",

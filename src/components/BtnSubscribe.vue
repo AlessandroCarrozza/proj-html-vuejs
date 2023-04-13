@@ -11,8 +11,9 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 .btn-subscribe{
-    background-color: green;
+    background-color: $btn-color-primary;
     color: white;
     padding: 0.7rem 2.5rem;
     border-radius: 30px;

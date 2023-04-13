@@ -38,8 +38,13 @@ li{
     }
 
     h3{
-        font-weight: 500;
+        font-weight: 300;
         padding: 1rem 0 0.5rem;
+    }
+
+    h5{
+        font-weight: 400;
+        color: grey;
     }
 }
 </style>

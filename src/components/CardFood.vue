@@ -14,23 +14,29 @@ export default{
 <template>
   <li>
     <h1>{{ name }}</h1>
-    <h5>{{ type }} dog food</h5>
+    <h4>{{ type }} dog food</h4>
     <img :src="'./src/assets/' + image" alt="">
-    <div class="btn-shop">{{ btnText }}</div>
+    <a href="#" class="btn-shop">{{ btnText }}</a>
   </li>
 </template>
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 li{
     margin: 0.5rem;
     width: calc(100% / 3 - 1rem);
-    background-color: green;
+    background-color: $bg-color-primary;
     padding: 4rem 0;
     background-image: url("../assets/bg-transp.png");
 
-    h5{
+    h1{
+        color: white;
+    }
+
+    h4{
         padding: 1rem 0;
+        color: $text-color-primary;
     }
 
     img{
@@ -41,10 +47,11 @@ li{
     .btn-shop{
         margin: auto;
         color: white;
-        background-color: lightgreen;
+        background-color: $btn-color-primary;
         width: 170px;
-        padding: 0.5rem 1rem;
+        padding: 0.7rem 1.2rem;
         border-radius: 30px;
+        display: block;
     }
 }
 </style>

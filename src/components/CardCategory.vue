@@ -14,7 +14,7 @@ export default{
 <template>
 <li>
     <img :src="'./src/assets/' + image" alt="">
-    <span>{{ name }}</span>
+    <span>{{ name }}&nbsp</span>
     <span>({{ number }})</span>
 </li>
 </template>

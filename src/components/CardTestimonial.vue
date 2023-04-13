@@ -30,6 +30,12 @@ li{
 
     p{
       padding: 1rem 0;
+      font-weight: 300;
+    }
+
+    h5{
+      color: lightgrey;
+      font-weight: 400;
     }
 }
 </style>

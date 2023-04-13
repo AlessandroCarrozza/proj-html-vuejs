@@ -19,15 +19,17 @@ export default{
 <section id="finder">
     <div class="finder-top">
         <div class="sx">
+            <div class="layover"></div>
             <div class="titles">
-                <h4>Find the best animal supplies</h4>
+                <h5>Find the best animal supplies</h5>
                 <h1>Popular accessories</h1>
                 <a href="#">View all toys accessories</a>
             </div>
         </div>
         <div class="dx">
+            <div class="layover"></div>
             <div class="titles">
-                <h4>Find the best pet food</h4>
+                <h5>Find the best pet food</h5>
                 <h1>new food arrivals</h1>
                 <a href="#">View all food products</a>
             </div>
@@ -47,8 +49,10 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 #finder{
     margin: 4rem 0;
+    color: white;
 
     .finder-top{
         height: 330px;
@@ -59,22 +63,41 @@ export default{
             display: inline-block;
             position: relative;
 
+            .layover{
+                background-color: rgba(0, 0, 0, 0.3);
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+            }
+
             .titles{
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 color: white;
+                text-align: center;
+
+                h5{
+                    text-transform: uppercase;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
 
                 h1{
                     padding: 2rem 0;
+                    font-weight: 500;
+                    font-size: 2rem;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 }
 
                 a{
                 background-color: white;
-                color: black;
-                padding: 0.5rem 1rem;
+                color: grey;
+                padding: 0.7rem 1.5rem;
                 border-radius: 30px;
+                font-size: 0.8rem;
             }
             }
 
@@ -92,14 +115,14 @@ export default{
     }
 
     .finder-bottom{
-        background-color: green;
+        background-color: $bg-color-primary;
         background-image: url("../assets/bg-transp.png");
         padding: 4rem 0;
 
         .info-icons{
             display: flex;
             flex-wrap: wrap;
-            justify-content: space-between;
+            justify-content: space-around;
         }
     }
 }

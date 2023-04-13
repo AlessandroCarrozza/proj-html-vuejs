@@ -27,10 +27,12 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 #footer-bottom{
 
     .container{
-        border-top: 1px solid black;
+        border-top: 2px solid $footer-box-color;
 
         .navbar{
            display: flex;
@@ -42,20 +44,20 @@ export default{
         }
 
         a{
-            color: white;
+            color: lightgrey;
+            font-size: 0.9rem;
         }
     }
 
     .socials{
-        display: flex;
-        justify-content: center;
+        @include jus-center;
 
         li{
             margin: 0 1rem;
 
             i{
                 color: white;
-                font-size: 1.5rem;
+                font-size: 1.2rem;
             }
         }
     }

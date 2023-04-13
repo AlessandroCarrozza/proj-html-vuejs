@@ -1,0 +1,20 @@
+@mixin flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin jus-center{
+    display: flex;
+    justify-content: center;
+}
+
+@mixin ali-center{
+    display: flex;
+    align-items: center;
+}
+
+@mixin flex-between{
+    display: flex;
+    justify-content: space-between;
+}

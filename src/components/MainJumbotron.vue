@@ -11,30 +11,43 @@ export default{
 
 <template>
   <section id="jumbotron">
+    <div class="boxes">
+        <span class="box">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h5>Demos</h5>
+        </span>
+        <span class="box">
+            <div class="on-sale">
+                <span class="dollar">$</span><span>39</span>
+            </div>
+            <h5>On Sale</h5>
+        </span>
+    </div>
     <div class="jumb-top">
         <ul class="container">
             <li>
                 <i class="fa-regular fa-map"></i>
-                <span><span>International </span>Shipping Services</span>
+                <span><span class="bold">International </span>Shipping Services</span>
             </li>
 
             <li>
                 <i class="fa-regular fa-clock"></i>
-                <span><span>International </span>Shipping Services</span>
+                <span>See our <span class="bold">store hours</span> and service</span>
             </li>
             
             <li>
                 <i class="fa-solid fa-check"></i>
-                <span><span>International </span>Shipping Services</span>
+                <span>We price match to give you the <span class="bold">best deals </span></span>
             </li>
         </ul>
     </div>
 
     <div class="jumb-mid">
         <div class="container">
+            <div class="layover"></div>
             <div class="titles">
-                <h3>testo testo testo</h3>
-                <h1>questo è il title principale testo testo testoooooo</h1>
+                <h3>Find the best animal supplies</h3>
+                <h1>We know animals are a part of your family, let us help take care of them</h1>
                 <BtnAboutUs></BtnAboutUs>
             </div>
         </div>
@@ -45,7 +58,7 @@ export default{
             <div class="img-jumb">
                 <img src="../assets/food-jumb.png" alt="Pet Food">
             </div>
-            <span>Get 50% of discount on our site before visite site <a href="#">visit the shoppppp</a></span>
+            <span>Get $25 OFF yor first purchase of our homemade pet food! <a href="#">visit the shop</a></span>
         </div>
     </div>
 </section>
@@ -53,9 +66,53 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
+#jumbotron{
+    position: relative;
+
+    .boxes{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 3;
+
+        .box{
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+            margin: 1rem;
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            
+            i{
+                font-size: 1.2rem;
+            }
+
+            h5{
+                font-size: 0.6rem;
+            }
+
+            .on-sale{
+                color: $btn-color-primary;
+
+                .dollar{
+                    font-size: 0.8rem;
+                    position: relative;
+                    bottom: 0.3rem;
+                }
+            }
+        }
+    }
+}
 .jumb-top{
     height: 60px;
-    background-color: green;
+    background-color: $bg-color-primary;
     background-image: url("../assets/bg-transp.png");
     background-size: contain;
     color: white;
@@ -69,25 +126,54 @@ export default{
         li i{
             padding: 0 0.3rem;
         }
+
+        li span{
+            font-weight: 400;
+            font-size: 0.9rem;
+            color: lightgrey;
+
+            .bold{
+                font-weight: 600;
+                color: white;
+            }
+        }
     }
 }
 
 .jumb-mid{
-    height: 500px;
+    height: 600px;
     background-image: url("../assets/bg-jumb.jpg");
     background-size: cover;
     color: white;
+    position: relative;
 
     .container{
         height: 100%;
-        display: flex;
-        align-items: center;
+        @include ali-center;
+
+        .layover{
+            background-color: rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
 
         .titles{
         width: 50%;
+        z-index: 2;
+
+        h3{
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
 
         h1{
             padding: 2rem 0;
+            font-size: 2.5rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
         }
     }
@@ -95,7 +181,7 @@ export default{
 
 .jumb-bottom{
     height: 120px;
-    background-color: green;
+    background-color: $bg-color-primary;
     background-image: url("../assets/bg-transp.png");
     background-size: contain;
     justify-content: space-around;
@@ -106,6 +192,12 @@ export default{
         text-align: center;
         display: flex;
         align-items: center;
+
+        a{
+            color: lightgrey;
+            text-decoration: underline;
+            margin: 0 0.5rem;
+        }
     }
 
     .img-jumb{

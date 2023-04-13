@@ -3,7 +3,30 @@ export default{
     name: "HeaderBottom",
     data() {
         return{
-            navbarList: ["Home", "Shop", "About", "Blog", "Contact", "Shop by brand"],
+            navbarList: [
+                {
+                    name: "Home",
+                    icon: true,
+                    active: true,
+                },
+                {
+                    name: "Shop",
+                    icon: true,
+                },
+                {
+                    name: "About",
+                },
+                {
+                    name: "Blog",
+                },
+                {
+                    name: "Contact",
+                },
+                {
+                    name: "Shop by brand",
+                    icon: true,
+                },
+            ],
         }
     }
 }
@@ -13,29 +36,44 @@ export default{
 <template>
     <section id="header-bottom">
         <ul class="navbar">
-            <li v-for="li in navbarList"><a href="#">{{ li }}</a></li>
+            <li v-for="li in navbarList">
+                <a href="#" :class="li.active == true ? 'col-black' : ''">{{ li.name }}</a>
+                <i v-if="li.icon != null" class="fa-solid fa-angle-down" :class="li.active == true ? 'col-black' : ''"></i>
+            </li>
         </ul>
     </section>
 </template>
 
 
 <style scoped lang="scss">
+@use "../styles/partials/mixins" as *;
 #header-bottom{
     height: 50%;
 
     .navbar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     height: 100%;
     width: 100%;
 
     li{
         padding: 0 1rem;
+        font-size: 0.9rem;
 
-        a{
+        a, i{
             color: grey;
         }
+
+        .col-black{
+            color: black;
+        }
+
+        i{
+            position: relative;
+            top: 0.1rem;
+            padding: 0 0.2rem;
+            font-size: 0.8rem;
+        }
+
     }
 }
 }

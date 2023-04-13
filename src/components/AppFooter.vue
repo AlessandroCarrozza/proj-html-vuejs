@@ -25,8 +25,9 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 #main-footer{
-    background-color: green;
+    background-color: $bg-color-primary;
     padding-bottom: 5rem;
 }
 </style>

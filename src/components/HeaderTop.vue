@@ -19,10 +19,10 @@ export default {
             </div>
             <div class="call">
                 <h4>Questions?</h4>
-                <span>Call us 33932939293932</span>
+                <span>Call us: 1.800.123.4567</span>
             </div>
             <div class="icons">
-                <i class="fa-solid fa-store"></i>
+                <i class="fa-solid fa-inbox"></i>
                 <i class="fa-regular fa-user"></i>
             </div>
         </div>
@@ -31,15 +31,16 @@ export default {
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
+@use "../styles/partials/mixins" as *;
 #header-top {
     height: 50%;
-    border-bottom: 1px solid lightgrey;
+    border-bottom: 1px solid $input-color;
     display: flex;
     justify-content: space-between;
 
     .container {
-        display: flex;
-        justify-content: space-between;
+        @include flex-between;
         align-items: center;
     }
 
@@ -48,19 +49,17 @@ export default {
     }
 
     .search {
-        width: 250px;
+        width: 300px;
         height: 40px;
         display: flex;
 
         span {
             width: 30px;
-            background-color: lightgrey;
+            background-color: $input-color;
             display: inline-block;
             border-top-left-radius: 50px;
             border-bottom-left-radius: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             padding-left: 0.6rem;
 
             i {
@@ -69,9 +68,9 @@ export default {
         }
 
         input {
-            width: 220px;
+            width: 270px;
             border: none;
-            background-color: lightgrey;
+            background-color: $input-color;
             border-top-right-radius: 50px;
             border-bottom-right-radius: 50px;
             padding-left: 0.6rem;
@@ -80,12 +79,21 @@ export default {
 
     .call h4 {
         display: inline-block;
+        font-weight: 600;
+        font-size: 0.9rem;
+        padding: 0 0.2rem;
+    }
+
+    .call span{
+        font-size: 0.9rem;
+        color: grey;
     }
 
     .icons i {
         padding: 0 0.6rem;
         font-size: 1.3rem;
         cursor: pointer;
+        color: grey;
     }
 }
 </style>

@@ -26,5 +26,11 @@ li{
         font-size: 2rem;
         padding: 1rem;
     }
+
+    h4{
+        color: lightgrey;
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
 }
 </style>

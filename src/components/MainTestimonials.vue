@@ -31,14 +31,18 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 #user-testimonials{
     text-align: center;
-    background-color: green;
+    background-color: $bg-color-primary;
     background-image: url("../assets/bg-transp.png");
     padding: 3rem 0 7rem;
+    color: white;
 
     h1{
-        padding: 2rem 0;
+        padding: 2rem 0 3rem;
+        font-size: 2rem;
+        font-weight: 500;
     }
 
     .testimonials{

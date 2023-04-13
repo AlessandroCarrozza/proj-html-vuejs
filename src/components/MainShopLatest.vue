@@ -37,12 +37,20 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 #shop-latest{
     text-align: center;
     padding: 2rem 0 5rem;
 
+    h1{
+        font-weight: 500;
+        font-size: 2rem;
+    }
+
     h4{
         padding: 1rem 0 1.5rem;
+        font-weight: 400;
+        color: $btn-color-primary;
     }
 
     .products-latest{

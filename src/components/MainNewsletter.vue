@@ -22,17 +22,23 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 #newsletter{
     .container{
         background-image: url("../assets/bg-newsletter.jpg");
         background-size: cover;
         position: relative;
         bottom: 4rem;
-        padding: 5rem 0 7rem 5rem;
+        padding: 5rem 0 6rem 5rem;
+
+        h1{
+            font-size: 2rem;
+        }
 
         p{
             width: 50%;
             padding: 3rem 0;
+            font-weight: 400;
         }
 
         input{
@@ -40,8 +46,8 @@ export default{
             width: 300px;
             border-radius: 30px;
             border: none;
-            background-color: lightgrey;
-            padding-left: 0.6rem;
+            background-color: $input-color;
+            padding-left: 1rem;
             margin-right: 1rem;
         }
     }

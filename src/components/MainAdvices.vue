@@ -18,8 +18,8 @@ export default{
 <template>
     <section id="advices">
         <div class="container">
-            <h1>Get the best tricks and tips</h1>
-            <h5>Recent articles</h5>
+            <h1>Get the best tricks & tips</h1>
+            <h4>Recent articles</h4>
 
             <ul class="recent-articles">
                 <CardArticle v-for="article in store.articlesList"
@@ -35,12 +35,19 @@ export default{
 
 
 <style scoped lang="scss">
+@use "../styles/partials/variables" as *;
 #advices{
     .container{
         text-align: center;
 
-        h5{
+        h1{
+            font-weight: 500;
+            font-size: 2rem;
+        }
+
+        h4{
             padding: 1rem 1.5rem;
+            color: $btn-color-primary;
         }
 
         .recent-articles{
@@ -50,9 +57,9 @@ export default{
         }
 
         .btn-all-articles{
-            background-color: green;
+            background-color: $btn-color-primary;
             color: white;
-            padding: 0.5rem 1rem;
+            padding: 0.7rem 1.5rem;
             border-radius: 30px;
         }
     }
