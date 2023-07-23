@@ -1,5 +1,5 @@
 // DEFAULT RULES
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,19 +8,23 @@
 
 
 // MAIN CODE
-.container{
+.container {
     width: 1170px;
     margin: auto;
 }
 
-input{
+input {
     outline: none;
 }
 
-li{
+li {
     list-style-type: none;
 }
 
-a{
+a {
     text-decoration: none;
+}
+
+.d-inline-block {
+    display: inline-block;
 }

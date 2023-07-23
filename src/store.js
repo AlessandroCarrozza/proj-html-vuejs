@@ -1,4 +1,4 @@
-import {reactive} from "vue"
+import { reactive } from "vue"
 export const store = reactive({
     categoryList: [
         {
@@ -125,35 +125,35 @@ export const store = reactive({
     productsLatestList: [
         {
             image: "product-9.jpg",
-            name: "Colored pet bed",
+            title: "Colored pet bed",
             price: "18.00",
             secondPrice: "26.00",
         },
         {
             image: "product-3.jpg",
-            name: "Colorfull ball set",
+            title: "Colorfull ball set",
             price: "29.00",
         },
         {
             image: "product-2.jpg",
-            name: "Dog bone",
+            title: "Dog bone",
             price: "18.00",
             oldPrice: "29.00",
             status: "sale",
         },
         {
             image: "product-4.jpg",
-            name: "Animal transport bed",
+            title: "Animal transport bed",
             price: "29.00",
         },
         {
             image: "product-10.jpg",
-            name: "Animal transport cage",
+            title: "Animal transport cage",
             price: "35.00",
         },
         {
             image: "product-11.jpg",
-            name: "Closable cat litter",
+            title: "Closable cat litter",
             price: "16.00",
         },
     ],
