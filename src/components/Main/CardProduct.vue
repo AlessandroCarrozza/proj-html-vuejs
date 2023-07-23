@@ -1,12 +1,12 @@
 <script>
-export default{
-    name: "CardProduct",
-    props: {
-        image: String,
-        name: String,
-        price: String,
-        oldPrice: String,
-    }
+export default {
+  name: "CardProduct",
+  props: {
+    image: String,
+    name: String,
+    price: String,
+    oldPrice: String,
+  }
 }
 </script>
 
@@ -23,28 +23,30 @@ export default{
 
 <style scoped lang="scss">
 @use "../../styles/partials/variables" as *;
-li{
-    margin: 1rem;
-    width: calc(100% / 4 - 2rem);
 
-    img{
-        width: 100%;
-    }
+li {
+  margin: 1rem;
+  width: calc(100% / 4 - 2rem);
 
-    h3{
-      padding: 0.5rem 0;
-      font-weight: 400;
-    }
+  img {
+    width: 100%;
+  }
 
-    h4, h5{
-      display: inline-block;
-      font-weight: 400;
-      color: $btn-color-primary;
-    }
+  h3 {
+    padding: 0.5rem 0;
+    font-weight: 400;
+  }
 
-    h5{
-      text-decoration: line-through;
-      padding: 0 0.2rem;
-    }
+  h4,
+  h5 {
+    display: inline-block;
+    font-weight: 400;
+    color: $btn-color-primary;
+  }
+
+  h5 {
+    text-decoration: line-through;
+    padding: 0 0.2rem;
+  }
 }
 </style>
